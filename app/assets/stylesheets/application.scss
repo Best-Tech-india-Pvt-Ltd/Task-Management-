@@ -1,0 +1,92 @@
+@import "bootstrap";
+
+.table-head-primary{
+    background-color: #007bff;
+    color: #fff
+}
+
+.flash_alert {
+    --tw-bg-opacity: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 1.5rem!important;
+}
+
+.flash_alert.error{
+    background-color: #ffe0e1;
+}
+
+.flash_alert.sucess{
+    background-color: #ebfff4;
+    color: green;
+}
+
+h2,h1,h3,h4.h5,h6 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2563eb;
+    padding-left: 20px;
+}
+
+.table-responsive td {
+    padding: 1.5rem!important;
+}
+
+.table-responsive th {
+    padding: 1rem!important;
+}
+
+.curd_buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.curd_buttons a {
+    padding: 8px;
+    border-radius: 100%;
+    border: 1px solid;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+.table {
+    margin: 0;
+}
+
+.primary_action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.form-control{
+    line-height: 2.5!important;
+}
+
+label {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn{
+    line-height: 35px;
+}
+
+.back_button_div .back_button{
+    text-decoration: none;
+    color: gray;
+}
+
+.curd_buttons a.danger_icon{
+    color: #dc3545;
+    border-color: #dc3545;
+}

@@ -1,0 +1,40 @@
+<div class="p-3">
+<p id="notice"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<div class="table-responsive shadow">
+  <table class="table">
+      <thead class="table-head-primary">
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col ">Created At</th>
+            <th scope="col"></th>
+          </tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.title %></td>
+            <td>
+              <%= category.created_at.strftime("%Y-%B-%d") %>
+            </td>
+            <td>
+              <div class="links flex mx-auto curd_buttons">
+                <%= link_to edit_category_path(category) do %>
+                  <i class="fa-regular fa-pen-to-square"></i>
+                <% end %>
+                <%= link_to category_path(category), method: :delete, data: { confirm: 'Are you sure?' }, class: "danger_icon" do %>
+                  <i class="fa-solid fa-trash"></i>
+                <% end %>
+              </div>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+  </table>
+</div>
+  <%= link_to 'New Category', new_category_path, class:"mt-3 btn btn-primary" %>
+</div>
+
+
